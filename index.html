@@ -116,8 +116,27 @@
 <h2>📊 RESUMO EXECUTIVO</h2>
 <p><strong>Dataset Analisado:</strong> DADOS_FORMATO_CORRETO.xlsx</p>
 <p><strong>Total de Formações Analisadas:</strong> 101</p>
-<p><strong>Período de Análise:</strong> Análise Temporal Completa</p>
-<p><strong>Gráficos Gerados:</strong> 7</p>
+<p><strong>Gráficos Gerados:</strong> 10</p>
+<h2>📅 ANÁLISE TEMPORAL (COLUNAS BOOLEANAS)</h2>
+<p><strong>Sistema de Marcação:</strong> 1 = Formação ativa no mês, 0 = Inativa</p>
+<p><strong>Meses Analisados:</strong> 12 meses</p>
+<p><strong>Total de Marcações Ativas (1's):</strong> 268</p>
+<p><strong>Meses com Formações Ativas:</strong> 12/12</p>
+<p><strong>Distribuição por Mês:</strong></p>
+<ul>
+<li><strong>Abr:</strong> 20 formação(ões) ativa(s)</li>
+<li><strong>Ago:</strong> 29 formação(ões) ativa(s)</li>
+<li><strong>Dez:</strong> 8 formação(ões) ativa(s)</li>
+<li><strong>Fev:</strong> 8 formação(ões) ativa(s)</li>
+<li><strong>Jan:</strong> 6 formação(ões) ativa(s)</li>
+<li><strong>Jul:</strong> 22 formação(ões) ativa(s)</li>
+<li><strong>Jun:</strong> 33 formação(ões) ativa(s)</li>
+<li><strong>Mai:</strong> 43 formação(ões) ativa(s)</li>
+<li><strong>Mar:</strong> 17 formação(ões) ativa(s)</li>
+<li><strong>Nov:</strong> 32 formação(ões) ativa(s)</li>
+<li><strong>Out:</strong> 24 formação(ões) ativa(s)</li>
+<li><strong>Set:</strong> 26 formação(ões) ativa(s)</li>
+</ul>
 <h2>📈 ANÁLISE VISUAL DAS FORMAÇÕES</h2>
 <div class="duas-colunas">
 
@@ -151,16 +170,35 @@
                 </div>
                 
                 <div class="grafico-container">
-                    <div class="grafico-titulo">🔥 Heatmap Temporal</div>
-                    <img src="grafico_heatmap_meses.png" alt="🔥 Heatmap Temporal" class="grafico">
+                    <div class="grafico-titulo">📈 Evolução Mensal (Booleanos)</div>
+                    <img src="grafico_evolucao_mensal.png" alt="📈 Evolução Mensal (Booleanos)" class="grafico">
                 </div>
                 </div>
+<div class="duas-colunas">
 
                 <div class="grafico-container">
-                    <div class="grafico-titulo">📈 Evolução por Colunas de Mês</div>
-                    <img src="grafico_evolucao_mensal_alternativo.png" alt="📈 Evolução por Colunas de Mês" class="grafico">
+                    <div class="grafico-titulo">📅 Distribuição por Mês (Booleanos)</div>
+                    <img src="grafico_distribuicao_mensal.png" alt="📅 Distribuição por Mês (Booleanos)" class="grafico">
                 </div>
-                <h2>🔍 ANÁLISE DETALHADA POR COLUNA</h2>
+                
+                <div class="grafico-container">
+                    <div class="grafico-titulo">🔥 Heatmap Mensal (Booleanos)</div>
+                    <img src="grafico_heatmap_meses.png" alt="🔥 Heatmap Mensal (Booleanos)" class="grafico">
+                </div>
+                </div>
+<div class="duas-colunas">
+
+                <div class="grafico-container">
+                    <div class="grafico-titulo">🔄 Formações Concorrentes</div>
+                    <img src="grafico_formacoes_concorrentes.png" alt="🔄 Formações Concorrentes" class="grafico">
+                </div>
+                
+                <div class="grafico-container">
+                    <div class="grafico-titulo">🌱 Análise Sazonal</div>
+                    <img src="grafico_analise_sazonal.png" alt="🌱 Análise Sazonal" class="grafico">
+                </div>
+                </div>
+<h2>🔍 ANÁLISE DETALHADA POR COLUNA</h2>
 <h3>📌 PÚBLICO/ SECRETARIA</h3>
 <p><strong>Tipo de Dado:</strong> <code>object</code></p>
 <p><strong>Valores Únicos:</strong> 3</p>
@@ -690,14 +728,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.06</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.24</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 6.00</li>
+                <li>Valor 1 (Ativo): 6 (5.9%)</li>
+                <li>Valor 0 (Inativo): 95 (94.1%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -723,14 +759,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.08</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.27</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 8.00</li>
+                <li>Valor 1 (Ativo): 8 (7.9%)</li>
+                <li>Valor 0 (Inativo): 93 (92.1%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -756,14 +790,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.17</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.38</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 17.00</li>
+                <li>Valor 1 (Ativo): 17 (16.8%)</li>
+                <li>Valor 0 (Inativo): 84 (83.2%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -789,14 +821,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.20</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.40</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 20.00</li>
+                <li>Valor 1 (Ativo): 20 (19.8%)</li>
+                <li>Valor 0 (Inativo): 81 (80.2%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -822,14 +852,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.43</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.50</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 43.00</li>
+                <li>Valor 1 (Ativo): 43 (42.6%)</li>
+                <li>Valor 0 (Inativo): 58 (57.4%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -855,14 +883,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.33</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.47</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 33.00</li>
+                <li>Valor 1 (Ativo): 33 (32.7%)</li>
+                <li>Valor 0 (Inativo): 68 (67.3%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -888,14 +914,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.22</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.41</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 22.00</li>
+                <li>Valor 1 (Ativo): 22 (21.8%)</li>
+                <li>Valor 0 (Inativo): 79 (78.2%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -921,14 +945,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.29</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.45</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 29.00</li>
+                <li>Valor 1 (Ativo): 29 (28.7%)</li>
+                <li>Valor 0 (Inativo): 72 (71.3%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -954,14 +976,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.26</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.44</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 26.00</li>
+                <li>Valor 1 (Ativo): 26 (25.7%)</li>
+                <li>Valor 0 (Inativo): 75 (74.3%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -987,14 +1007,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.24</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.43</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 24.00</li>
+                <li>Valor 1 (Ativo): 24 (23.8%)</li>
+                <li>Valor 0 (Inativo): 77 (76.2%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -1020,14 +1038,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.32</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.47</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 32.00</li>
+                <li>Valor 1 (Ativo): 32 (31.7%)</li>
+                <li>Valor 0 (Inativo): 69 (68.3%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -1053,14 +1069,12 @@
 <p><strong>Valores Únicos:</strong> 2</p>
 <p><strong>Completude:</strong> 101/101 (100.0%)</p>
 
-            <p><strong>Estatísticas Descritivas:</strong></p>
+            <p><strong>Estatísticas Booleanas:</strong></p>
             <ul>
-                <li>Média: 0.08</li>
-                <li>Mediana: 0.00</li>
-                <li>Desvio Padrão: 0.27</li>
-                <li>Mínimo: 0.00</li>
-                <li>Máximo: 1.00</li>
-                <li>Soma: 8.00</li>
+                <li>Valor 1 (Ativo): 8 (7.9%)</li>
+                <li>Valor 0 (Inativo): 93 (92.1%)</li>
+                <li>Outros valores: 0</li>
+                <li>Nulos: 0 (0.0%)</li>
             </ul>
             <p><strong>Tabela de Frequência:</strong></p>
 <table border="1" class="dataframe dataframe">
@@ -1122,30 +1136,25 @@
         <li><strong>Total de Colunas:</strong> 23</li>
         <li><strong>Colunas Numéricas:</strong> 17</li>
         <li><strong>Colunas Categóricas:</strong> 6</li>
-        <li><strong>Colunas de Data/Hora:</strong> 0</li>
-        <li><strong>Colunas com Potencial de Data:</strong> 0</li>
+        <li><strong>Colunas Booleanas de Mês:</strong> 12</li>
+        <li><strong>Total de Marcações "1" (Ativo):</strong> 268</li>
+        <li><strong>Total de Marcações "0" (Inativo):</strong> 944</li>
+        <li><strong>Taxa de Atividade:</strong> 22.1%</li>
         <li><strong>Taxa Geral de Completude:</strong> 89.9%</li>
     </ul>
-    <h3>📅 Distribuição por Mês (Colunas Individuais)</h3>
-<ul>
-<li><strong>Jan:</strong> 101 formação(ões)</li>
-<li><strong>Fev:</strong> 101 formação(ões)</li>
-<li><strong>Mar:</strong> 101 formação(ões)</li>
-<li><strong>Abr:</strong> 101 formação(ões)</li>
-<li><strong>Mai:</strong> 101 formação(ões)</li>
-<li><strong>Jun:</strong> 101 formação(ões)</li>
-<li><strong>Jul:</strong> 101 formação(ões)</li>
-<li><strong>Ago:</strong> 101 formação(ões)</li>
-<li><strong>Set:</strong> 101 formação(ões)</li>
-<li><strong>Out:</strong> 101 formação(ões)</li>
-<li><strong>Nov:</strong> 101 formação(ões)</li>
-<li><strong>Dez:</strong> 101 formação(ões)</li>
-</ul>
+    <h3>🔄 ANÁLISE DE SOBREPOSIÇÃO TEMPORAL</h3>
 
+        <ul>
+            <li><strong>Formações em único mês:</strong> 15</li>
+            <li><strong>Formações em múltiplos meses:</strong> 82</li>
+            <li><strong>Formações sem marcação temporal:</strong> 4</li>
+        </ul>
+        
     <hr>
     <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: 40px;">
-        <p>Relatório gerado em: 10/12/2025 14:11:19</p>
+        <p>Relatório gerado em: 10/12/2025 14:24:10</p>
         <p>Total de análises: 101 formações | 23 variáveis analisadas</p>
-        <p>Gráficos gerados: 7 visualizações</p>
+        <p>Gráficos gerados: 10 visualizações</p>
+        <p>Sistema de Marcação Temporal: 1 = Formação ativa no mês, 0 = Inativa</p>
     </div>
     </body></html>

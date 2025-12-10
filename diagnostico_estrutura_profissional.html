@@ -1,0 +1,1151 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        background-color: #f4f7f6;
+        margin: 40px;
+        line-height: 1.6;
+    }
+    h1 {
+        background-color: #002D62;
+        color: white;
+        padding: 20px;
+        margin-top: 0;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-weight: 600;
+    }
+    h2 {
+        color: #002D62;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        font-weight: 500;
+    }
+    h3 {
+        color: #0056b3;
+        margin-top: 25px;
+        font-weight: 500;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        margin: 20px 0;
+    }
+    p strong {
+        color: #555;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    th {
+        background-color: #e9ecef;
+        color: #495057;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+    tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    tr:hover {
+        background-color: #e2e6ea;
+    }
+    
+    .vazia {
+        color: #dc3545;
+        font-style: italic;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+    
+    .grafico {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    }
+    
+    .grafico-container {
+        text-align: center;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .grafico-titulo {
+        color: #002D62;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .duas-colunas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .duas-colunas {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head><body>
+<h1>📋 RELATÓRIO COMPLETO DE ANÁLISE DE FORMAÇÕES</h1>
+<h2>📊 RESUMO EXECUTIVO</h2>
+<p><strong>Dataset Analisado:</strong> DADOS_FORMATO_CORRETO.xlsx</p>
+<p><strong>Total de Formações Analisadas:</strong> 101</p>
+<p><strong>Período de Análise:</strong> Análise Temporal Completa</p>
+<p><strong>Gráficos Gerados:</strong> 7</p>
+<h2>📈 ANÁLISE VISUAL DAS FORMAÇÕES</h2>
+<div class="duas-colunas">
+
+                <div class="grafico-container">
+                    <div class="grafico-titulo">📋 Distribuição por Tipo</div>
+                    <img src="grafico_distribuicao_tipo.png" alt="📋 Distribuição por Tipo" class="grafico">
+                </div>
+                
+                <div class="grafico-container">
+                    <div class="grafico-titulo">🎓 Modalidade de Ensino</div>
+                    <img src="grafico_distribuicao_modalidade.png" alt="🎓 Modalidade de Ensino" class="grafico">
+                </div>
+                </div>
+<div class="duas-colunas">
+
+                <div class="grafico-container">
+                    <div class="grafico-titulo">📚 Áreas de Formação</div>
+                    <img src="grafico_distribuicao_area.png" alt="📚 Áreas de Formação" class="grafico">
+                </div>
+                
+                <div class="grafico-container">
+                    <div class="grafico-titulo">✅ Status das Formações</div>
+                    <img src="grafico_status_formacoes.png" alt="✅ Status das Formações" class="grafico">
+                </div>
+                </div>
+<div class="duas-colunas">
+
+                <div class="grafico-container">
+                    <div class="grafico-titulo">📊 Vagas vs Concluintes</div>
+                    <img src="grafico_vagas_concluintes.png" alt="📊 Vagas vs Concluintes" class="grafico">
+                </div>
+                
+                <div class="grafico-container">
+                    <div class="grafico-titulo">🔥 Heatmap Temporal</div>
+                    <img src="grafico_heatmap_meses.png" alt="🔥 Heatmap Temporal" class="grafico">
+                </div>
+                </div>
+
+                <div class="grafico-container">
+                    <div class="grafico-titulo">📈 Evolução por Colunas de Mês</div>
+                    <img src="grafico_evolucao_mensal_alternativo.png" alt="📈 Evolução por Colunas de Mês" class="grafico">
+                </div>
+                <h2>🔍 ANÁLISE DETALHADA POR COLUNA</h2>
+<h3>📌 PÚBLICO/ SECRETARIA</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 3</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+<p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SEEDUC</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>SEEDUC / SME</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>SME</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 TIPO</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 9</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+<p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Curso</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Encontro</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Seminários</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Projeto</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Palestra</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Webinários</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Compartilhamento Diário</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Workshop</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Projeto integrado</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 MODALIDADE</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 5</p>
+<p><strong>Completude:</strong> 99/101 (98.0%)</p>
+<p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EaD</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>Presencial</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Híbrido</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>On-line</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Não se aplica</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 ÁREA(S)</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 12</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+<p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COOPEF</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>COOASED/COOPEF</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>COOAGF</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>COOARP</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>COOARP/COOPEF</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>COOASED</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>COOASED/COOAGF</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>COOAGF/COOASED</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>COOARP/COOAGF</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>COOASED/COOARP</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>COOPEF/COOARP</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>COOPEF/COOASED</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 PÚBLICO-ALVO</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 26</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+<p><strong>Top 20 Valores Mais Frequentes:</strong> (de 26 valores únicos)</p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profissionais da Educação</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Docentes</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Docentes, CPs, OEs</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Servidores</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Gestores</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Docentes ingressantes</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Docentes e CP</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Professores Formadores</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Executivos Público</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Não se aplica</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Docentes e Gestores</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Docente, CP e Diretores</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Docentes (Fomento)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Docentes escolas Esporte Cria</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>SUGEN/SUPDP/SUPED</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Servidores SEEDUC e Docentes SME</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Diretores e equipe técnica</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>a definir</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CP e professores articuladores</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>80 DRPs e gestores</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><p><em>... e mais 6 valores únicos</em></p>
+<hr>
+<h3>📌 Nº VAGAS</h3>
+<p><strong>Tipo de Dado:</strong> <code>float64</code></p>
+<p><strong>Valores Únicos:</strong> 19</p>
+<p><strong>Completude:</strong> 87/101 (86.1%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 1504.72</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 9356.23</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 82619.00</li>
+                <li>Soma: 130911.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>100.0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>50.0</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1821.0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>40.0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>180.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>300.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>28030.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>25.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>42.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>82619.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>35.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>216.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9999.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>395.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>95.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>200.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>150.0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Nº CONCLUINTES</h3>
+<p><strong>Tipo de Dado:</strong> <code>float64</code></p>
+<p><strong>Valores Únicos:</strong> 61</p>
+<p><strong>Completude:</strong> 85/101 (84.2%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 115.35</li>
+                <li>Mediana: 87.00</li>
+                <li>Desvio Padrão: 152.82</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 754.00</li>
+                <li>Soma: 9805.00</li>
+            </ul>
+            <p><strong>Top 20 Valores Mais Frequentes:</strong> (de 61 valores únicos)</p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>186.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>200.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>145.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>35.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>100.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>110.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>80.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>69.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>251.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>104.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>650.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>31.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>94.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>49.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>22.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>14.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>155.0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table><p><em>... e mais 41 valores únicos</em></p>
+<hr>
+<h3 class="vazia">❌ Coluna VAZIA ignorada: ATUALIZADO EM</h3>
+<hr>
+<h3>📌 STATUS</h3>
+<p><strong>Tipo de Dado:</strong> <code>object</code></p>
+<p><strong>Valores Únicos:</strong> 5</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+<p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EM ANDAMENTO</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>PREVISTO</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>CONCLUÍDO</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>EM ELABORAÇÃO</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>PROPOSTA</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Jan</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.06</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.24</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 6.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Fev</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.08</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.27</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 8.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Mar</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.17</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.38</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 17.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Abr</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.20</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.40</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 20.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Mai</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.43</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.50</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 43.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Jun</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.33</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.47</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 33.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Jul</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.22</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.41</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 22.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Ago</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.29</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.45</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 29.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Set</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.26</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.44</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 26.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Out</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.24</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.43</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 24.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Nov</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.32</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.47</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 32.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>32</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3>📌 Dez</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.08</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.27</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 8.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h3 class="vazia">❌ Coluna VAZIA ignorada: Jan.1</h3>
+<hr>
+<h3>📌 Fev.1</h3>
+<p><strong>Tipo de Dado:</strong> <code>int64</code></p>
+<p><strong>Valores Únicos:</strong> 2</p>
+<p><strong>Completude:</strong> 101/101 (100.0%)</p>
+
+            <p><strong>Estatísticas Descritivas:</strong></p>
+            <ul>
+                <li>Média: 0.02</li>
+                <li>Mediana: 0.00</li>
+                <li>Desvio Padrão: 0.14</li>
+                <li>Mínimo: 0.00</li>
+                <li>Máximo: 1.00</li>
+                <li>Soma: 2.00</li>
+            </ul>
+            <p><strong>Tabela de Frequência:</strong></p>
+<table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Valor</th>
+      <th>Frequência</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table><hr>
+<h2>📈 MÉTRICAS ADICIONAIS</h2>
+
+    <ul>
+        <li><strong>Total de Colunas:</strong> 23</li>
+        <li><strong>Colunas Numéricas:</strong> 17</li>
+        <li><strong>Colunas Categóricas:</strong> 6</li>
+        <li><strong>Colunas de Data/Hora:</strong> 0</li>
+        <li><strong>Colunas com Potencial de Data:</strong> 0</li>
+        <li><strong>Taxa Geral de Completude:</strong> 89.9%</li>
+    </ul>
+    <h3>📅 Distribuição por Mês (Colunas Individuais)</h3>
+<ul>
+<li><strong>Jan:</strong> 101 formação(ões)</li>
+<li><strong>Fev:</strong> 101 formação(ões)</li>
+<li><strong>Mar:</strong> 101 formação(ões)</li>
+<li><strong>Abr:</strong> 101 formação(ões)</li>
+<li><strong>Mai:</strong> 101 formação(ões)</li>
+<li><strong>Jun:</strong> 101 formação(ões)</li>
+<li><strong>Jul:</strong> 101 formação(ões)</li>
+<li><strong>Ago:</strong> 101 formação(ões)</li>
+<li><strong>Set:</strong> 101 formação(ões)</li>
+<li><strong>Out:</strong> 101 formação(ões)</li>
+<li><strong>Nov:</strong> 101 formação(ões)</li>
+<li><strong>Dez:</strong> 101 formação(ões)</li>
+</ul>
+
+    <hr>
+    <div style="text-align: center; color: #666; font-size: 0.9em; margin-top: 40px;">
+        <p>Relatório gerado em: 10/12/2025 14:11:19</p>
+        <p>Total de análises: 101 formações | 23 variáveis analisadas</p>
+        <p>Gráficos gerados: 7 visualizações</p>
+    </div>
+    </body></html>
